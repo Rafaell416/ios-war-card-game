@@ -54,12 +54,15 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdQ-6Q-Vn3" userLabel="Deal Button">
                                         <rect key="frame" x="94" y="200" width="81.666666666666686" height="31"/>
                                         <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jza-dX-58i"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" spacing="20"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="C4j-Pu-Anr" userLabel="Player Score Stack View">
-                                <rect key="frame" x="20" y="686" width="55.666666666666657" height="72"/>
+                                <rect key="frame" x="19.999999999999996" y="686" width="55.666666666666657" height="72"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rX-nV-eM4">
                                         <rect key="frame" x="0.0" y="0.0" width="55.666666666666664" height="24"/>
@@ -112,6 +115,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="leftImageView" destination="NuD-Ng-dfx" id="YVi-po-veK"/>
+                        <outlet property="leftScoreLabel" destination="gr4-WZ-Q2J" id="cD5-b1-1vZ"/>
+                        <outlet property="rightImageView" destination="H8T-Sg-O1C" id="H1r-by-2wu"/>
+                        <outlet property="rightScoreLabel" destination="UVR-e1-GgM" id="dd7-Ql-lWQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
